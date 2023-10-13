@@ -1,9 +1,4 @@
 function solution(array, height) {
-    let answer = 0;
-    array.forEach((item) => {
-        if ( item > height ) {
-            answer ++;
-        }
-    });
-    return answer;
+    let tall = array.filter((item) => item > height)
+    return tall.length;
 }
