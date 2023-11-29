@@ -1,9 +1,6 @@
 function solution(n_str) {
-    for ( let i = 0; i < n_str; i++ ) {
-        while( n_str[i] == 0 ) {
-            n_str = n_str.replace(n_str[i], '')
-        }
-        break;
+    while( n_str[0] == 0 ) {
+        n_str = n_str.replace(n_str[0], '')
     }
     return n_str
 }
