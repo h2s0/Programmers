@@ -1,9 +1,7 @@
 function solution(strArr) {
-    var answer = [];
-    strArr.forEach((item,index) => {
-        index % 2 == 1
-            ? answer.push(item.toUpperCase())
-            : answer.push(item.toLowerCase())
-    })
-    return answer;
+    return answer = strArr.map((item,index) => {
+        return index % 2 == 1
+            ? item.toUpperCase()
+            : item.toLowerCase();
+    });
 }
