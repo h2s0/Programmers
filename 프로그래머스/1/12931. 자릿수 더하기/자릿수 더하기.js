@@ -1,3 +1,4 @@
 function solution(n) {
-    return [...(n.toString())].length === 1 ? n : [...(n.toString())].reduce((acc, cur) => acc*1 + cur*1);
+    console.log([...n])
+    return [...toString(n)].reduce((acc, cur) => acc + cur);
 }
